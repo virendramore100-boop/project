@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    background: skyblue;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    background: #eee;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.testimonials {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

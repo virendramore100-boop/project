@@ -1,0 +1,56 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+}
+
+/* ✅ Fade-in Animation */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ✅ Slide-in Animation */
+.slide-in {
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* ✅ Hover Transition */
+.btn {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    background: darkblue;
+    transform: scale(1.2);
+}
+
+/* Box Styling */
+.box {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
